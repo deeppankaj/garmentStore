@@ -44,7 +44,6 @@ const getOrder= async () => {
 
 
 const forget_password_reset=async(data)=>{
-  console.log()
   const response=await axios.post(`${base_url}user/forgot-password-token`,data)
   return response.data;
 }

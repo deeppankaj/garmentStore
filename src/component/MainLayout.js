@@ -38,8 +38,7 @@ const MainLayout = () => {
       
     };
     const role = useSelector((state) => state?.auth?.user?.super);
-console.log(role
-  )
+
   useEffect(() => {
     const handleResize = () => {
       // set the collapsed state based on the screen width

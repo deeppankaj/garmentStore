@@ -25,11 +25,9 @@ const Userorders = () => {
   const setorderStatus = (e, i) => {
     const data = { id: i, orderStatus: e };
     dispatch(orderupdate(data));
-    console.log(i);
   };
 
   const { orders } = useSelector((state) => state.auth);
-console.log(orders)
   return (
     <>
       <div>

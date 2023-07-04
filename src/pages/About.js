@@ -9,7 +9,7 @@ const About = () => {
       
       <div className="compare-product-wrapper home-wrapper-2 py-5">
             <div className="container-xxl">
-        <div class="row d-flex align-items-center justify-content-center">
+        <div className="row d-flex align-items-center justify-content-center">
         <div className=" card rounded-5  col-sm-9  mx-auto  p-4 mx-5">
        <h1> Who We Are </h1>
 <h6> Deepnap Softech supports in chain of business management, implementation, deployment, and maintenance. Deepnap Softech play the role of sales support tool by assisting companies in optimizing business infrastructure to complete their business purposes successfully. <br></br> Our software helps to business functions like sales support, customer service, daily business activities management, inventory management, appointment booking, notification, SMS alert, and recorded voice calls. <br></br> This function reduces costs and helps in better time management, allowing the business enterprise to focus on other important areas of operation. </h6>

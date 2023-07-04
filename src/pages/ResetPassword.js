@@ -44,7 +44,7 @@ export default function ResetPassword() {
       <BreadCrumb title="Reset Password" />
       <div className="Forget-password-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
-          <div class="row d-flex align-items-center justify-content-center">
+          <div className="row d-flex align-items-center justify-content-center">
           <div className=" card rounded-5 col-12 col-sm-6 col-md-4 mx-auto  p-4 mx-5">
               <h4 className='mb-3 mt-2 text-center'>Reset Password</h4>
               <form action="" className="d-flex flex-column justify-content-around gap-15 mb-2" onSubmit={formik.handleSubmit}>

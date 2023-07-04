@@ -76,3 +76,10 @@ main::-webkit-scrollbar {
   color: red;
   font-size: 12px;
 }
+.header-upper{
+  background: linear-gradient(to bottom, #ff8800, #ff1b00c9) !important;
+}
+.navbar.navbar-expand-lg{
+  background: #ff8800;
+}
+

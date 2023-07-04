@@ -55,7 +55,7 @@ message.success("Register Succesfully")
    
    backgroundPosition: "center",
    minHeight: "100vh" }}>
-          <div class="row d-flex align-items-center justify-content-center">
+          <div className="row d-flex align-items-center justify-content-center">
           <div className=" card rounded-5 col-12 col-sm-6 col-md-4 mx-auto  p-4 mx-5">
               <h4 className='mb-3 mt-2 text-center'>Sign Up</h4>
               <form action="" onSubmit={formik.handleSubmit}>

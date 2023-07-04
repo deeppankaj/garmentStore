@@ -158,10 +158,10 @@ export default function Invoice() {
             <MDBCol xl="3">
               <MDBTypography listUnStyled>
                 <li className="text-muted ms-3">
-                  <span class="text-black me-4">SubTotal</span>$1110
+                  <span className="text-black me-4">SubTotal</span>$1110
                 </li>
                 <li className="text-muted ms-3 mt-2">
-                  <span class="text-black me-4">Tax(15%)</span>$111
+                  <span className="text-black me-4">Tax(15%)</span>$111
                 </li>
               </MDBTypography>
               <p className="text-black float-start">

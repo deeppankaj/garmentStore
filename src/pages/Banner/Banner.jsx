@@ -4,15 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import './Banner.css';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import gadgetSale from '../Banner/images/Categories/long width (1).png';
-import kitchenSale from '../Banner/images/Categories/long width (2).png';
-import poco from '../Banner/images/Categories/long width (3).png';
-import realme from '../Banner/images/Categories/long width (4).png';
-import fashionSale from '../Banner/images/Categories/long width (5).png';
-import oppo from '../Banner/images/Categories/slide b (1).png'
-import realme1 from '../Banner/images/Categories/slide b (2).png';
-import fashionSale2 from '../Banner/images/Categories/slide b (3).png';
-import oppo3 from '../Banner/images/Categories/slide b (4).png'
+
+import { banner1, banner2, banner3, banner4, banner5 } from '../../assets/banner';
 export const PreviousBtn = ({ className, onClick }) => {
   return (
     <div className={className} onClick={onClick}>
@@ -43,7 +36,7 @@ const Banner = () => {
     nextArrow: <NextBtn />,
   };
 
-  const banners = [gadgetSale, kitchenSale, poco, fashionSale, realme, oppo, fashionSale2, realme1, oppo3];
+  const banners = [banner1,banner2,banner4,banner3,banner5];
 
   return (
     <>

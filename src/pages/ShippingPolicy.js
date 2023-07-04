@@ -10,7 +10,7 @@ const ShippingPolicy = () => {
       
       <div className="compare-product-wrapper home-wrapper-2 py-5">
             <div className="container-xxl">
-        <div class="row d-flex align-items-center justify-content-center">
+        <div className="row d-flex align-items-center justify-content-center">
           <div className=" card rounded-5  col-sm-9  mx-auto  p-4 mx-5">
               
             

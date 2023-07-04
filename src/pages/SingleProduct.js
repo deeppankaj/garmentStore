@@ -49,7 +49,6 @@ const [selectedColor, setSelectedColor] = useState(null);
     setSizename(siz.title)
 
     message.success("Size is Selected");
-    console.log(siz.title);
   }
   
   const handleColorClick = (colo) => {
@@ -57,7 +56,6 @@ const [selectedColor, setSelectedColor] = useState(null);
     setShowColor(!showColor);
    setColorname(colo.title)
     message.success("Color is Selected");
-    console.log(colo.title);
   }
 
   const handleAddToCart = () => {
@@ -117,11 +115,11 @@ const percentage = (ratings.length) / 100;
       <BreadCrumb title="Product Name" />
       <div className="compare-product-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
-          <div class="row d-flex align-items-center justify-content-center">
+          <div className="row d-flex align-items-center justify-content-center">
           <div className="col-12 card bg-white mb-5 p-3">
-        <div class="wrapper row">
-          <div class="preview col-md-6"> 
-            <div class="preview-pic tab-content">
+        <div className="wrapper row">
+          <div className="preview col-md-6"> 
+            <div className="preview-pic tab-content">
             <div className="tab-pane active p-5" id="pic-1">
         <Image
           style={{ width: "400px", height: "400px" }}
@@ -129,8 +127,8 @@ const percentage = (ratings.length) / 100;
           alt="example" />
     </div>
        </div>
-            <ul class="preview-thumbnail nav nav-tabs">
-              <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src={`${images[0]?.url}` } 
+            <ul className="preview-thumbnail nav nav-tabs">
+              <li className="active"><a data-target="#pic-1" data-toggle="tab"><img src={`${images[0]?.url}` } 
                 onClick={(e)=>{
                   e.preventDefault();
                   setImage(images[0]?.url)
@@ -177,16 +175,16 @@ const percentage = (ratings.length) / 100;
             </ul>
             <br></br><br></br>    
           </div>
-          <div class="details col-md-6 gap-10">
-            <h5 class="product-title">{title?title:""}</h5>
+          <div className="details col-md-6 gap-10">
+            <h5 className="product-title">{title?title:""}</h5>
 <hr></hr>
-<p class="product-description">Key Features</p>
-<p class="product-description">{description?description.replace(/(<([^>]+)>)/gi,""):" "
+<p className="product-description">Key Features</p>
+<p className="product-description">{description?description.replace(/(<([^>]+)>)/gi,""):" "
 }</p>
 <br/>
-<h5 class="price">current price: <span > &nbsp;₹ {Discount>0?price-(price*Discount)/100:price}</span></h5>
+<h5 className="price">current price: <span > &nbsp;₹ {Discount>0?price-(price*Discount)/100:price}</span></h5>
 
-<h6 class="colors d-flex;
+<h6 className="colors d-flex;
 align-items-center">colors: 
 
 {color && color.length > 0 ? color.map((colo) => {
@@ -214,7 +212,7 @@ align-items-center">colors:
 
          
 </h6>
-<h6 class="sizes">
+<h6 className="sizes">
 
 Available:
 {size && size.length > 0 ? 
@@ -223,7 +221,7 @@ Available:
         return (
             
                 
-                <span class="size" data-toggle="tooltip" title="small"   onClick={() => handleSizeClick(siz)}>
+                <span className="size" data-toggle="tooltip" title="small"   onClick={() => handleSizeClick(siz)}>
                     {siz.title ? siz.title : ''}
                 </span>
             
@@ -232,7 +230,7 @@ Available:
     : " "
 }
             
-</h6>           <div class="action row d-flex  gap-30 justify-content-between mb-2">
+</h6>           <div className="action row d-flex  gap-30 justify-content-between mb-2">
              <div className="col-sm-4 d-flex gap-10 ">
              <h5 className="mb-0">Quantity  </h5>
              <p style={{ display: "flex", alignItems: "center" }}>
@@ -259,8 +257,8 @@ Available:
     Buy Now
   </button> */}
 </div>
-            <div class="rating">
-              <div class="stars">
+            <div className="rating">
+              <div className="stars">
               
               <ReactStars
       count={5}
@@ -272,11 +270,11 @@ Available:
 
               </div>
 
-              <span class="review-no">41 reviews</span>
+              <span className="review-no">41 reviews</span>
             </div>
             
             
-            <p class="vote"><strong>{percentage?percentage:""}%</strong> of buyers enjoyed this product! <strong>({ ratings?ratings.length:""} votes)</strong></p>
+            <p className="vote"><strong>{percentage?percentage:""}%</strong> of buyers enjoyed this product! <strong>({ ratings?ratings.length:""} votes)</strong></p>
       
             <div className="d-flex gap-10 flex-column  mt-3">
                   <h5 className="product-heading">Shipping & Returns :</h5>
