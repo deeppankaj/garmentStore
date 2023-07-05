@@ -90,13 +90,13 @@ const Header = () => {
             >
               {!isOpen && <FaBars fontSize={22} onClick={toggleMenu} />}
               {isOpen && <RxCross2 fontSize={22} onClick={toggleMenu} />}
-              <h4 className="text-light mt-2" style={{ fontWeight: "600" }}>
+              <Link to={"/"} className="h4 text-light mt-2" style={{ fontWeight: "600" }}>
                 Mangla <br /> Garments
-              </h4>
+              </Link>
             </div>
             <div className="col-4 d-none d-lg-flex  align-content-center justify-content-center">
               <div
-                className="input-group mb-0"
+                className="input-group mt-3 mb-0"
                 style={{ height: "40px", marginTop: "5px" }}
               >
                 <input
@@ -204,11 +204,14 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <div id="nav-sidebar" className="col-12 col-md-4 shadow">
+      <div className="text-white bg-white" style={{height:"80px"}}>
+        sdf
+      </div>
+      <div id="nav-sidebar" className="col-8 col-md-2 shadow">
         <div className="logo-Sidebar d-flex align-items-center justify-content-between gap-4 px-4">
-          <h4 className="text-dark mt-1 ms-4" style={{ fontWeight: "600" }}>
+          <Link  onClick={toggleMenu} to={"/"} className="text-dark mt-1 h4" style={{ fontWeight: "600" }}>
             Mangla <br /> Garments
-          </h4>
+          </Link>
           {!isOpen && <FaBars fontSize={22} onClick={toggleMenu} />}
           {isOpen && <RxCross2 fontSize={22} onClick={toggleMenu} />}
         </div>

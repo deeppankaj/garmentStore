@@ -10,16 +10,6 @@ import BlogCards from "../components/BlogCards";
 import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
 import FamousProduct from "../components/FamousProduct";
-import mainbanner2 from "../images/main-banner-2.png";
-
-
-// import catbanner1 from "../images/catbanner-01.jpg";
-import catbanner1 from "../images/Blue And White Modern Electronic Sale Facebook Ad (405 × 265 px) (404 × 264 px) (1).png";
-
-import catbanner2 from "../images/Blue.png";
-import catbanner3 from "../images/catbanner-03.png";
-import catbanner4 from "../images/catbanner-04.png";
-
 import tab1 from "../images/1.png";
 import tab2 from "../images/2.png";
 
@@ -28,13 +18,6 @@ import tab5 from "../images/4.png";
 import tab6 from "../images/5.png";
 import tab7 from "../images/6.png";
 
-import famous1 from "../images/famous-1.png";
-import famous2 from "../images/famous-2.png";
-import famous3 from "../images/famous-3.png";
-import famous4 from "../images/famous-4.png";
-import famous5 from "../images/famous-5.png";
-import famous6 from "../images/famous-6.png";
-import famous7 from "../images/famous-7.png";
 import Container from "../components/Container";
 import { useDispatch, useSelector } from "react-redux";
 import Slider from "react-slick";
@@ -47,9 +30,45 @@ import "slick-carousel/slick/slick-theme.css";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import Banner from "./Banner/Banner";
-import {brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8 , card1, card2, card3, main1, main2, main3, main4, main5, main6, main7} from "../assets/index"
-import {mens,women,kids,tshirt,top,kurta,denim,casual} from "../assets/category";
-import { fcard1, fcard2, fcard3, fcard4, fcard5, fcard6, fcard7 } from "../assets/featureCard";
+import {
+  brand1,
+  brand2,
+  brand3,
+  brand4,
+  brand5,
+  brand6,
+  brand7,
+  brand8,
+  card1,
+  card2,
+  card3,
+  main1,
+  main2,
+  main3,
+  main4,
+  main5,
+  main6,
+  main7,
+} from "../assets/index";
+import {
+  mens,
+  women,
+  kids,
+  tshirt,
+  top,
+  kurta,
+  denim,
+  casual,
+} from "../assets/category";
+import {
+  fcard1,
+  fcard2,
+  fcard3,
+  fcard4,
+  fcard5,
+  fcard6,
+  fcard7,
+} from "../assets/featureCard";
 
 export const PreviousBtn = ({ className, onClick }) => {
   return (
@@ -151,46 +170,46 @@ const Home = () => {
   };
   const categories = [
     {
-      name:"Mens",
-      img:mens,
-      qty:60
+      name: "Mens",
+      img: mens,
+      qty: 60,
     },
     {
-      name:"Women",
-      img:women,
-      qty:80
+      name: "Women",
+      img: women,
+      qty: 80,
     },
     {
-      name:"Kids",
-      img:kids,
-      qty:40
+      name: "Kids",
+      img: kids,
+      qty: 40,
     },
     {
-      name:"Tshirt",
-      img:tshirt,
-      qty:70
+      name: "Tshirt",
+      img: tshirt,
+      qty: 70,
     },
     {
-      name:"Tops",
-      img:top,
-      qty:10
+      name: "Tops",
+      img: top,
+      qty: 10,
     },
     {
-      name:"Kurta",
-      img:kurta,
-      qty:8
+      name: "Kurta",
+      img: kurta,
+      qty: 8,
     },
     {
-      name:"Denim",
-      img:denim,
-      qty:100
+      name: "Denim",
+      img: denim,
+      qty: 100,
     },
     {
-      name:"Casual",
-      img:casual,
-      qty:50
+      name: "Casual",
+      img: casual,
+      qty: 50,
     },
-  ]
+  ];
   return (
     <>
       <div style={{ overflowX: "hidden" }}>
@@ -288,8 +307,7 @@ const Home = () => {
                         alt="main-banner"
                       />
                     </Link>
-                    <div className="small-banner-content position-absolute">
-                    </div>
+                    <div className="small-banner-content position-absolute"></div>
                   </div>
                 </div>
                 <div className="col-md-6 mb-2">
@@ -308,8 +326,7 @@ const Home = () => {
                         alt="main-banner"
                       />
                     </Link>
-                    <div className="small-banner-content position-absolute text-white">
-                    </div>
+                    <div className="small-banner-content position-absolute text-white"></div>
                   </div>
                 </div>
               </div>
@@ -365,24 +382,31 @@ const Home = () => {
         <section className="home-wrapper-2 py-3 hovering my-2 ">
           <div className="container-xxl">
             <div className="row d-flex alilgn-items-center justify-content-between">
-             {
-              categories.map((cate,i)=>{
-                return(<div key={i} className="col-4 col-md-1  d-flex flex-column align-items-center mb-2 p-0">
-                <img
-                  src={cate.img}
-                  style={{ borderRadius: "1800px", cursor: "pointer",width:"250px" }}
-                  onClick={() => {
-                    dispatch(
-                      setQueryParams({ param: "search", value: cate.name })
-                    );
-                    navigate("/app/product");
-                  }}
-                />
-                <h6 className="text-center">{cate.name}</h6>
-                <p className="mb-0 text-center">{cate.qty} Products</p>
-              </div>)
-              })
-             }
+              {categories.map((cate, i) => {
+                return (
+                  <div
+                    key={i}
+                    className="col-4 col-md-1  d-flex flex-column align-items-center mb-2 p-0"
+                  >
+                    <img
+                      src={cate.img}
+                      style={{
+                        borderRadius: "1800px",
+                        cursor: "pointer",
+                        width: "250px",
+                      }}
+                      onClick={() => {
+                        dispatch(
+                          setQueryParams({ param: "search", value: cate.name })
+                        );
+                        navigate("/app/product");
+                      }}
+                    />
+                    <h6 className="text-center">{cate.name}</h6>
+                    <p className="mb-0 text-center">{cate.qty} Products</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -397,7 +421,7 @@ const Home = () => {
                 {productState &&
                   Array.isArray(productState) &&
                   productState.map((item, i) => {
-                    if (item.tags === "special") {
+                    if (item?.tags?.includes("special")) {
                       return (
                         <ProductCard key={i} grid={item} width={"18rem"} />
                       );
@@ -439,96 +463,46 @@ const Home = () => {
                 <h3>Special Products</h3>
               </div>
               <div className="row special-product-card">
-                <div className="col-md-4 col-sm-6 g-2">
-                  <SpecialProduct
-                    image={tab1}
-                    brand="MI"
-                    content=" MI Note 8 Pro with extra features.."
-                    price="18000"
-                    stroke="20000"
-                    onClick={() => {
-                      dispatch(
-                        setQueryParams({ param: "search", value: "Mi mobile" })
+                {productState &&
+                  Array.isArray(productState) &&
+                  productState.map((item, i) => {
+                    if (item?.tags?.includes("special")) {
+                      return (
+                        <div key={item?._id} className="col-md-4 col-sm-6 g-2">
+                          <SpecialProduct
+                            image={item.images[0].url}
+                            brand={item.brand}
+                            content={`${item.title
+                              ?.split(" ")
+                              .slice(0, 4)
+                              .join(" ")} ${" "}
+                            ${item.title?.split(" ").length > 5 ? "..." : ""}`}
+                            price={
+                              item.Discount > 0
+                                ? item.price -
+                                  (item.price * item.Discount) / 100
+                                : item.price
+                            }
+                            stroke={item.price}
+                            onClick={() => {
+                              dispatch(
+                                setQueryParams({
+                                  param: "search",
+                                  value: "Mi mobile",
+                                })
+                              );
+                            }}
+                          />
+                        </div>
                       );
-                    }}
-                  />
-                </div>
-                <div className="col-md-4 col-sm-6 g-2">
-                  <SpecialProduct
-                    image={tab2}
-                    brand="IVOOMI"
-                    content=" Computers with Advanced technology Made in india ..."
-                    price="15000"
-                    stroke="18000"
-                    onClick={() => {
-                      dispatch(
-                        setQueryParams({ param: "search", value: "computer" })
-                      );
-                    }}
-                  />
-                </div>
-                <div className="col-md-4 col-sm-6 g-2">
-                  <SpecialProduct
-                    image={tab4}
-                    brand="Grocery"
-                    content="  Everything Availability to make Food"
-                    price="5000"
-                    stroke="5500"
-                    onClick={() => {
-                      dispatch(
-                        setQueryParams({ param: "search", value: "Grocery" })
-                      );
-                    }}
-                  />
-                </div>
-                <div className="col-md-4 col-sm-6 g-2">
-                  <SpecialProduct
-                    image={tab5}
-                    brand="Apple"
-                    content="  Apple the new concept of thinking"
-                    price="45000"
-                    stroke="55000"
-                    onClick={() => {
-                      dispatch(
-                        setQueryParams({ param: "search", value: "Apple" })
-                      );
-                    }}
-                  />
-                </div>
-                <div className="col-md-4 col-sm-6 g-2">
-                  <SpecialProduct
-                    image={tab6}
-                    brand="Lg"
-                    content=" the all new freshness features"
-                    price="28000"
-                    stroke="22000"
-                    onClick={() => {
-                      dispatch(
-                        setQueryParams({ param: "search", value: "Kitchen" })
-                      );
-                    }}
-                  />
-                </div>
-                <div className="col-md-4 col-sm-6 g-2">
-                  <SpecialProduct
-                    image={tab7}
-                    brand="Voltas"
-                    content="the perfect product for summers"
-                    price="32000"
-                    stroke="37000"
-                    onClick={() => {
-                      dispatch(
-                        setQueryParams({ param: "search", value: "Ac" })
-                      );
-                    }}
-                  />
-                </div>
+                    }
+                  })}
               </div>
             </div>
           </div>
         </section>
-
-        <section className="popular-wrapper py-3 home-wrapper-2">
+        {/* our popular product section */}
+        <section className="popular-wrapper py-3 home-wrapper-2 mb-2">
           <div className="container-xxl">
             <div className="row d-flex align-items center justify-content-center">
               <div className="col-12">
@@ -539,9 +513,9 @@ const Home = () => {
                   {productState &&
                     Array.isArray(productState) &&
                     productState.map((item, i) => {
-                      if (item.tags === "popular") {
+                      if (item?.tags?.includes("popular")) {
                         return (
-                          <ProductCard key={i} grid={item} width={"18rem"} />
+                          <ProductCard key={i} grid={item} className="col-10" />
                         );
                       }
                     })}
@@ -550,6 +524,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* features sections */}
         <section className="home-wrapper-2 py-3 my-3">
           <div className="container-xxl">
             <div className="row d-flex alilgn-items-center justify-content-between">
@@ -583,6 +558,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* brand marquee section */}
         <section className="marquee-wrapper py-3 home-wrapper-2">
           <div className="container-xxl">
             <div className="row">

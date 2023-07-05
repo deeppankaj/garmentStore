@@ -14,20 +14,21 @@ export default function SpecialProduct(props) {
     "&:hover": {
       transform: "scale(1.2)",
     },
+   
   };
 
   return (
     <>
-      <div className="card" style={{ width: "auto" }}>
+      <div className="card overflow-hidden" style={{ width: "auto" }}>
         <div className="row no-gutters">
-          <div className="col-md-5 position-relative d-flex align-items-center justify-content-center">
+          <div className="col-md-5 position-relative d-flex align-items-center justify-content-center" style={{height:"300px"}}>
             <span className="badge rounded-pill bg-warning position-absolute">
               -20
             </span>
 
             <img
               style={style}
-              className="img-responsive cardImg"
+              className=""
               src={props.image}
               alt="Suresh Dasari Card"
             />

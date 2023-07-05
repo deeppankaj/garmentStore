@@ -189,12 +189,12 @@ header {
 
 footer {
   /* background-color: var(--color-232f3e); */
-  background: #e07800;
+  background: #038aa5;
 
 }
 
 footer:not(:first-child) {
-  border-top: 1px solid red;
+  border-top: 1px solid rgb(0, 174, 255);
 }
 
 footer .input-group-text {
@@ -1351,9 +1351,9 @@ img{
 /* todo naviagtion css */
 
 #navBar {
-  background: linear-gradient(to bottom, #ff19008f, #ff8800) !important;
+  background: #00d4fff3 !important;
   display: flex;
-  /* position: fixed; */
+  position: fixed;
   height: 80px;
   align-items: center;
   width: 100%;
@@ -1379,7 +1379,7 @@ img{
 }
 
 #nav-sidebar{
-  background: #ff8800f3 !important;
+  background: #00d4fff3 !important;
   position: fixed;
   left: -120vw;
   top: 0;
@@ -1399,15 +1399,15 @@ img{
 }
 .menubtn:active , .menubtn:hover{
   width: 100%;
-  border: 2px solid #ff19008f;
+  border: 2px solid #00d5ff;
   margin: 5px 0px;
   padding: 5px 1px 5px 18px;
-  background: #ff8800 !important;
+  background: #00d4fff3 !important;
   color: #000 !important;
 }
 .logo-Sidebar{
   height: 80px;
   cursor: pointer;
-  background: linear-gradient(to bottom, #ff19008f, #ff8800) !important;
-border-bottom: 2px solid #ff19008f ;
+  background: #00d4fff3 !important;
+border-bottom: 2px solid #00d5ff ;
 }
