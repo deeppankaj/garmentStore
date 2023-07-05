@@ -14,6 +14,7 @@ export default function SpecialProduct(props) {
     "&:hover": {
       transform: "scale(1.2)",
     },
+    height:"200px"
    
   };
 

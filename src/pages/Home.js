@@ -103,6 +103,7 @@ const Home = () => {
   }, []);
 
   const productState = useSelector((state) => state.product.products);
+  console.log(productState)
 
   const settings = {
     dots: false,
@@ -412,7 +413,7 @@ const Home = () => {
         </section>
         <Banner />
 
-        <section className="mt-5">
+        <section className="my-5">
           <div className="container-xxl">
             <h3>Featured Collection</h3>
 
@@ -421,9 +422,9 @@ const Home = () => {
                 {productState &&
                   Array.isArray(productState) &&
                   productState.map((item, i) => {
-                    if (item?.tags?.includes("special")) {
+                    if (item?.tags?.includes("featured")) {
                       return (
-                        <ProductCard key={i} grid={item} width={"18rem"} />
+                        <ProductCard key={i} grid={item}  />
                       );
                     }
                   })}
@@ -456,7 +457,7 @@ const Home = () => {
           </div>
         </Marquee>
 
-        <section className="special-wrapper py-3 home-wrapper-2">
+        <section className="special-wrapper py-3 home-wrapper-2 my-3">
           <div className="container-xxl">
             <div className="row d-flex align-items center justify-content-center">
               <div className="col-12">

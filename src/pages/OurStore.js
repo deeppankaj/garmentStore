@@ -98,7 +98,7 @@ export default function OurStore() {
   const currentItems = sortedProducts.slice(startIndex, endIndex);
 
   const cards = currentItems.map((item) => (
-    <ProductCard grid={item} className="col-md-3" key={item.id} />
+    <ProductCard grid={item} className="col-12" key={item.id} />
   ));
 
   return (
@@ -106,8 +106,8 @@ export default function OurStore() {
       <Meta title="Our Store"></Meta>
       <BreadCrumb title="Our Store" />
       <div className="store-wrapper home-wrapper-2 py-3 ">
-        <div className="container-xxl" style={{ overflowX: "hidden" }}>
-          <div className="row d-flex flex-md-row">
+        <div className="container-xxl " style={{ overflowX: "hidden" }}>
+          <div className="row d-flex w-full flex-md-row">
             <div className="col-md-3  d-block ">
               <div className="filter-card mb-3">
                 <h5 className="my-0">Sort By </h5>
@@ -218,10 +218,10 @@ export default function OurStore() {
               </div>
             </div>
 
-            <div className=" col-12 col-md-9 d-block">
+            <div className=" col-12 col-md-9 d-block ">
               <div className="filter-sort-grid mb-3">
                 <div className="row  d-flex justify-content-between align-items-center">
-                  <div className="col-md-4 d-flex flex-start justify-content-between align-items-center align-content-start  mx-md-2">
+                  <div className="col-md-4 d-flex flex-start justify-content-between align-items-center align-content-start">
                     <p
                       className="my-0"
                       onClick={clearfilter}
@@ -233,25 +233,20 @@ export default function OurStore() {
                 </div>
               </div>
 
-              <div className="product-list  d-flex flex-wrap flex-sm-nowrap ">
-                <div
-                  className="row"
-                  style={{
-                    width: "auto",
-                  }}
-                >
-                  <section className="mx-1 mb-2">
-                    <div className="row d-flex gap-1">{cards}</div>
-                    <div className="text-center">
-                      <Pagination
-                        current={currentPage}
-                        total={totalItems}
-                        pageSize={itemsPerPage}
-                        onChange={handlePageChange}
-                      />
-                    </div>
-                  </section>
-                </div>
+              <div className="product-list col-12 d-flex flex-wrap flex-sm-nowrap overflow-hidden">
+                <section className="mx-1 mb-2 col-12 ">
+                  <div className="row">
+                  {cards}
+                  </div>
+                  <div className="text-center mt-4">
+                    <Pagination
+                      current={currentPage}
+                      total={totalItems}
+                      pageSize={itemsPerPage}
+                      onChange={handlePageChange}
+                    />
+                  </div>
+                </section>
               </div>
             </div>
           </div>

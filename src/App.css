@@ -1358,27 +1358,29 @@ img{
   align-items: center;
   width: 100%;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
 }
 
-.notiSpan{
+.notiSpan {
   cursor: pointer;
   font-size: 17px;
   position: relative;
   padding: 0px 5px;
   border-radius: 100px;
 }
+
 .compareSpan {
   top: 2px;
   left: -25px;
 }
-.whishlistSpan{
+
+.whishlistSpan {
   background: #fff;
   top: -6px;
   left: -9px;
 }
 
-#nav-sidebar{
+#nav-sidebar {
   background: #00d4fff3 !important;
   position: fixed;
   left: -120vw;
@@ -1387,7 +1389,8 @@ img{
   z-index: 9999;
   transition: all 0.3s ease-in-out;
 }
-.menubtn{
+
+.menubtn {
   width: 100%;
   border: 2px solid transparent;
   margin: 5px 0px;
@@ -1397,7 +1400,9 @@ img{
   font-weight: 500;
   cursor: pointer !important;
 }
-.menubtn:active , .menubtn:hover{
+
+.menubtn:active,
+.menubtn:hover {
   width: 100%;
   border: 2px solid #00d5ff;
   margin: 5px 0px;
@@ -1405,9 +1410,27 @@ img{
   background: #00d4fff3 !important;
   color: #000 !important;
 }
-.logo-Sidebar{
+
+.logo-Sidebar {
   height: 80px;
   cursor: pointer;
   background: #00d4fff3 !important;
-border-bottom: 2px solid #00d5ff ;
+  border-bottom: 2px solid #00d5ff;
+}
+
+/* product card */
+
+@media (min-width: 992px) {
+  .productCard {
+    flex: 0 0 auto;
+    width: 24% !important;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 720px) and (min-width: 400px) {
+  .productCard {
+    flex: 0 0 auto;
+    width: 48% !important;
+    cursor: pointer;
+}
 }
